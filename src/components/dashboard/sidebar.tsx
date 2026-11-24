@@ -1,7 +1,14 @@
-import { BarChart3, LayoutDashboard, Package, Settings, ShoppingCart, Users } from "lucide-react"
+import {
+  BarChart3,
+  LayoutDashboard,
+  Package,
+  Settings,
+  ShoppingCart,
+  Users,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 const nav = [
   { label: "ภาพรวม", icon: LayoutDashboard, active: true },
@@ -9,7 +16,7 @@ const nav = [
   { label: "สินค้า", icon: Package },
   { label: "ลูกค้า", icon: Users },
   { label: "รายงาน", icon: BarChart3 },
-]
+];
 
 export function Sidebar() {
   return (
@@ -18,7 +25,7 @@ export function Sidebar() {
         <div className="bg-primary text-primary-foreground grid size-7 place-items-center rounded-md text-sm font-bold">
           P
         </div>
-        <span className="font-semibold">Project CI/CD</span>
+        <span className="font-semibold">Bigger</span>
       </div>
       <Separator />
       <nav className="flex flex-1 flex-col gap-1 p-3">
@@ -42,5 +49,5 @@ export function Sidebar() {
         </Button>
       </div>
     </aside>
-  )
+  );
 }
